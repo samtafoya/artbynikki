@@ -10,6 +10,13 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(publicPath, 'index.html'));
 });
 
+var urlGetHello = "/api/hello";
+app.get(urlGetHello, (req, res) => {
+    var str = urlGetHello + " (GET) " + "just called";
+    console.log(str);
+    res.send({ express: str });
+});
+
 app.listen(port, () => {
     console.log('Server is up!');
 });

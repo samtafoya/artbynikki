@@ -33,6 +33,12 @@ code {
   color: white;
 }
 
+a {
+  color: #ffffff;
+}
 a:visited {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
+}
+a:hover, a:active, a:focus {
+  color:#ffffff;
 }

@@ -2,6 +2,21 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+
+  // Initialize state
+  state = {}
+
+  render() {
+
+    return (
+      <div>
+        <p className="App"> Art By Nikki </p>
+        <p className="App2"> insta: @_artbynikki_ </p>
+      </div>
+    );
+  }
+
+  /*
   // Initialize state
   state = { passwords: [] }
 
@@ -22,17 +37,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        {/* Render the passwords if we have them */}
         {passwords.length ? (
           <div>
             <h1>5 Passwords.</h1>
             <ul className="passwords">
-              {/*
-                Generally it's bad to use "index" as a key.
-                It's ok for this example because there will always
-                be the same number of passwords, and they never
-                change positions in the array.
-              */}
               {passwords.map((password, index) =>
                 <li key={index}>
                   {password}
@@ -59,6 +67,7 @@ class App extends Component {
       </div>
     );
   }
+  */
 }
 
 export default App;

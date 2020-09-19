@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wrap {
+  padding-left: 10px;
+  /*color: blueviolet;*/
+}
+
+.nav {
+  text-align: center;
+  font-size: 25px;
+  /*border-style: solid;
+  border-width: 5px; */
+  /*border-color: blueviolet;*/
+  background-color: #474649;
+  min-height: 5vh;
+  /*display: flex;*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+}

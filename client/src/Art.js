@@ -1,11 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
-import InstagramEmbed from 'react-instagram-embed';
 
 class Art extends Component {
 
     // Initialize state
     state = {}
+
+    handleSubmitCooler = async e => {
+        // redirect to the orders page
+        localStorage.setItem('orderType', "Cooler");
+        console.log(localStorage.getItem('orderType'));
+        this.props.history.push('/order');
+    }
+
+    handleSubmitCanvas = async e => {
+        // redirect to the orders page
+        localStorage.setItem('orderType', "Canvas");
+        console.log(localStorage.getItem('orderType'));
+        this.props.history.push('/order');
+    }
+
+    handleSubmitCricket = async e => {
+        // redirect to the orders page
+        localStorage.setItem('orderType', "Cricket Item");
+        console.log(localStorage.getItem('orderType'));
+        this.props.history.push('/order');
+    }
 
     render() {
 
@@ -14,18 +34,13 @@ class Art extends Component {
                 <p className="App">
                     Art
                 </p>
-                <InstagramEmbed
-                    url='https://www.instagram.com/p/CFS3s7UjIst/'
-                    maxWidth={320}
-                    hideCaption={false}
-                    containerTagName='div'
-                    protocol=''
-                    injectScript
-                    onLoading={() => { }}
-                    onSuccess={() => { }}
-                    onAfterRender={() => { }}
-                    onFailure={() => { }}
-                />
+                <ul>
+                    <li onClick={this.handleSubmitCooler}>Cooler</li>
+                    <br></br>
+                    <li onClick={this.handleSubmitCanvas}>Canvas</li>
+                    <br></br>
+                    <li onClick={this.handleSubmitCricket}>Cricket Item</li>
+                </ul>
             </div>
         );
     }

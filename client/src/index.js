@@ -11,7 +11,6 @@ const routing = (
     <div className="nav">
       <Link className="wrap" to="/">Home</Link>
       <Link className="wrap" to="/art">Art</Link>
-      <Link className="wrap" to="/order">Order</Link>
     </div>
     <div>
       <Route exact path="/" component={App} />

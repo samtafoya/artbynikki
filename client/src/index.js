@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Art from './Art';
+import Products from './Products';
 import Order from './Order';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import './index.css'
@@ -10,11 +10,11 @@ const routing = (
   <Router>
     <div className="nav">
       <Link className="wrap" to="/">Home</Link>
-      <Link className="wrap" to="/art">Art</Link>
+      <Link className="wrap" to="/products">Products</Link>
     </div>
     <div>
       <Route exact path="/" component={App} />
-      <Route path="/art" component={Art} />
+      <Route path="/products" component={Products} />
       <Route path="/order" component={Order} />
     </div>
   </Router>

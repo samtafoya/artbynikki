@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-class Art extends Component {
+class Products extends Component {
 
     // Initialize state
     state = {}
@@ -46,4 +46,4 @@ class Art extends Component {
     }
 }
 
-export default Art;
+export default Products;

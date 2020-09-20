@@ -8,7 +8,7 @@ class Order extends Component {
             name: '',
             email: '',
             message: '',
-            titleTxt: ' '
+            titleTxt: ''
         }
     }
 

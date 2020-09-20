@@ -35,12 +35,24 @@ class Products extends Component {
                     Art
                 </p>
                 <ul>
-                    <li onClick={this.handleSubmitCooler}>Cooler</li>
+                    <li onClick={this.handleSubmitTest}>Cooler</li>
                     <br></br>
                     <li onClick={this.handleSubmitCanvas}>Canvas</li>
                     <br></br>
                     <li onClick={this.handleSubmitCricket}>Cricket Item</li>
                 </ul>
+                <div>
+                    <p className="App">Coolers</p>
+                    <p>Pics of Coolers</p>
+                </div>
+                <div>
+                    <p className="App">Canvases</p>
+                    <p>Pics of Canvases</p>
+                </div>
+                <div>
+                    <p className="App">Crickets Items</p>
+                    <p>Pics of Cricket Items</p>
+                </div>
             </div>
         );
     }

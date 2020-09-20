@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import Products from './Products';
 import Order from './Order';
+import Admin from './Admin';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import './index.css'
 
@@ -16,6 +17,7 @@ const routing = (
       <Route exact path="/" component={App} />
       <Route path="/products" component={Products} />
       <Route path="/order" component={Order} />
+      <Route path="/admin" component={Admin} />
     </div>
   </Router>
 )

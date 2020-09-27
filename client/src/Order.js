@@ -44,6 +44,7 @@ class Order extends Component {
                     <br></br>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
+                <button onClick={this.handleSubmit2}>Submit2</button>
             </div>
         );
     }
@@ -80,6 +81,15 @@ class Order extends Component {
             } else if (response.status === 'fail') {
                 alert("Message failed to send.")
             }
+        })
+
+        fetch('/api/sendorder', {
+            method: "POST",
+            body: JSON.stringify(this.state),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
         })
     }
 }

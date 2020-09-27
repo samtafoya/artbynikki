@@ -58,7 +58,7 @@ class Admin extends Component {
                 for (var i in idArr) {
                     nList = this.state.allList.concat(
                         <div key={i} >
-                            {idArr[i]} {nameArr[i]} {emailArr[i]} {itemArr[i]}
+                            {idArr[i]} // {nameArr[i]} // {emailArr[i]} // {itemArr[i]}
                         </div>);
                     this.setState({ allList: nList });
                 }

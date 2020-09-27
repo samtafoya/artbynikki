@@ -55,6 +55,34 @@ app.get(urlGetOrder, (req, res) => {
         });
 });
 
+var urlPostOrder = "/api/sendorder";
+app.post(urlPostOrder, function (req, res) {
+
+    // Get sent data.
+    var email = "sammit@live.com";
+    var name = "test";
+    var details = "test details";
+
+    //console.log(pass_word);
+
+    var sql = 'INSERT INTO orders (email, name, details) VALUES (?)';
+    var values = [email, name, details];
+
+    // Do a MySQL query for email.
+    var query = mysql.format(sql, [values]);
+
+    connection.query(query, function (err, result) {
+        if (err) {
+            console.log(err);
+        }
+
+    });
+
+    var str = urlPostOrder + " (POST) " + "just called " + JSON.stringify(req.body);
+    console.log(email);
+    res.send({ express: str });
+});
+
 /*---------------------------------------------------------------------------*/
 
 //                  CODE FOR EMAILS

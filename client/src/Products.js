@@ -35,7 +35,7 @@ class Products extends Component {
                     Art
                 </p>
                 <ul>
-                    <li onClick={this.handleSubmitTest}>Cooler</li>
+                    <li onClick={this.handleSubmitCooler}>Cooler</li>
                     <br></br>
                     <li onClick={this.handleSubmitCanvas}>Canvas</li>
                     <br></br>

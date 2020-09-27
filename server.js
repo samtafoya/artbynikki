@@ -11,6 +11,7 @@ const connection = mysql.createConnection({
     //password: 'root',
     database: 'artbynikki',
     //insecureAuth : true,
+    port: '8899'
 });
 
 var bodyParser = require('body-parser');

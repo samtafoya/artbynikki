@@ -5,13 +5,15 @@ const mysql = require('mysql');
 const app = express();
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Schmoopy123!',
+    host: 'us-cdbr-east-02.cleardb.com',
+    user: 'b521bc743772af',
+    password: 'ff3f80c3',
+    //user: 'root',
+    //password: 'Schmoopy123!',
     //password: 'root',
-    database: 'artbynikki',
+    database: 'heroku_7b64eb218a8bf01',
     //insecureAuth : true,
-    port: '8899'
+    //port: '8899'
 });
 
 var bodyParser = require('body-parser');

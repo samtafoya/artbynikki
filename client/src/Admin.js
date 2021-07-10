@@ -114,9 +114,9 @@ class Admin extends Component {
                 for (var i in idArr) {
                     let test = nameArr[i];
                     nList = this.state.allList.concat(
-                        `<div key={i} >
-                        <img src="${test}" alt="Thelma"/>
-                    </div>`);
+                        <div key={i} >
+                            <img src="${test}" alt="Thelma" />
+                        </div>);
                     this.setState({ allList: nList });
                 }
                 this.setState({ allList: nList });

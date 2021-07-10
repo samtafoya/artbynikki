@@ -133,14 +133,14 @@ class Admin extends Component {
         const allList = this.state.allList;
         const path = this.state.path;
 
-        return `(
+        return (
             <div>
                 <p className="App"> Admin Page </p>
                 <br></br>
-                <img src="${path}" alt="Thelma" />
+                <img src={path} alt="Thelma" />
                 {allList}
             </div>
-        )`;
+        );
     }
 }
 

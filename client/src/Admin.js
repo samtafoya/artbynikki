@@ -9,7 +9,8 @@ class Admin extends Component {
         nameArr: [],
         emailArr: [],
         detailsArr: [],
-        allList: []
+        allList: [],
+        path: ""
     }
 
     /*
@@ -111,11 +112,12 @@ class Admin extends Component {
 
                 // add the items to the array as html elements
                 let nList = [];
+                let img = nameArr[0];
                 for (var i in idArr) {
-                    let test = nameArr[i];
+                    //img = nameArr[i];
                     nList = this.state.allList.concat(
                         <div key={i} >
-                            <img src="${test}" alt="Thelma" />
+                            <img src="${test}" alt="Thelma1" />
                         </div>);
                     this.setState({ allList: nList });
                 }
@@ -129,11 +131,13 @@ class Admin extends Component {
 
     render() {
         const allList = this.state.allList;
+        const path = this.state.path;
 
         return (
             <div>
                 <p className="App"> Admin Page </p>
                 <br></br>
+                `<img src="${path}" alt="Thelma" />`
                 {allList}
             </div>
         );

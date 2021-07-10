@@ -140,6 +140,28 @@ app.post('/send', (req, res, next) => {
     })
 })
 
+/*---------------------------------------------------------------------------*/
+
+//                  CODE FOR ORDERS
+
+/*---------------------------------------------------------------------------*/
+
+var urlGetOrder = "/api/getimages";
+app.get(urlGetOrder, (req, res) => {
+    var sqlString = "SELECT * FROM images";
+    connection.query(sqlString,
+        function (err, rows, fields) {
+            if (err) {
+                console.log(err);
+            }
+
+            console.log('The reponse is: ', rows);
+            var jString = JSON.stringify(rows);
+
+            res.send(JSON.parse(jString));
+        });
+});
+
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {

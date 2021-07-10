@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
+// Dont think i need this, delete class
+
+/*
 class Order1 extends Component {
 
     // Initialize state
@@ -16,7 +20,7 @@ class Order1 extends Component {
         let orderType = localStorage.getItem('orderType');
         this.setState({ titleTxt: orderType });
         // api call when the page is accesses
-        /*
+
         fetch('/api/hello')
             .then(res => {
                 console.log(res);
@@ -26,7 +30,7 @@ class Order1 extends Component {
                 console.log(users);
                 this.setState({ users })
             });
-        */
+
     }
 
     // Implementation of the "callApi" function
@@ -49,7 +53,7 @@ class Order1 extends Component {
     };
 
     handleSubmit1 = async e => {
-        // call the api 
+        // call the api
         this.callApi();
 
     }
@@ -101,3 +105,4 @@ class Order1 extends Component {
 }
 
 export default Order1;
+*/
